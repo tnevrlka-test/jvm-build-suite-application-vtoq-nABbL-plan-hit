@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-bstg
+  namespace: jvm-build-hfpp-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:955beaa7d057d56c06973f858df54b354acdcc092e8c28ce958c5440a2606601
+        name: container-image
+        resources: {}
+status: {}
